@@ -7,6 +7,152 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Header Start -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Travel Agency Logo">
+                <h1>Travel Agency</h1>
+            </div>
+            <nav id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#packages">Our Package</a></li>
+                    <li><a href="#call-us">Call Us</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    
+    <!-- Home Start -->
+    <section class="home" id="home">
+        <div class="home-container">
+            <div class="description">
+                <h2>Selama Datang di Travel Agency</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget erat non augue iaculis varius vel
+                    vel libero.</p>
+            </div>
+            <div class="image">
+                <img class="slider-image" src="assets/images/jepang.jpg" alt="Jepang">
+                <img class="slider-image" src="assets/images/amerika.jpg" alt="Amerika">
+                <img class="slider-image" src="assets/images/india.jpg" alt="India">
+                <img class="slider-image" src="assets/images/korea.jpg" alt="Korea">
+                <img class="slider-image" src="assets/images/paris.jpg" alt="Paris">
+                <img class="slider-image" src="assets/images/rusia.jpg" alt="Rusia">
+            </div>
+            <div class="contact-form">
+                <h3>Contact Us</h3>
+                <form onsubmit="return validateForm()">
+                    <label for="name">Nama :</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="interest">Mau liburan kemana?</label>
+                    <select id="interest" name="interest">
+                        <option value="Jepang">Jepang</option>
+                        <option value="Korea">Korea</option>
+                        <option value="Amerika">Amerika</option>
+                        <option value="Rusia">Rusia</option>
+                        <option value="India">India</option>
+                        <option value="Paris">Paris</option>
+                    </select>
+                    <button type="submit">Daftar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Home End -->
+
+    <!-- Our Packages Start -->
+    <section class="packages" id="packages">
+        <div class="packages-container">
+            <h2>Our Packages</h2>
+            <div class="package-card">
+                <div class="card">
+                    <img src="assets/images/jepang.jpg" alt="Jepang">
+                    <div class="card-content">
+                        <h3>Jepang</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="price">Rp. 1.500.000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/amerika.jpg" alt="Amerika">
+                    <div class="card-content">
+                        <h3>Amerika</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="price">Rp. 1.500.000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/india.jpg" alt="India">
+                    <div class="card-content">
+                        <h3>India</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="price">Rp. 1.500.000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/korea.jpg" alt="Korea">
+                    <div class="card-content">
+                        <h3>Korea</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="price">Rp. 1.500.000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/paris.jpg" alt="Paris">
+                    <div class="card-content">
+                        <h3>Paris</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="price">Rp. 1.500.000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/rusia.jpg" alt="Rusia">
+                    <div class="card-content">
+                        <h3>Rusia</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="price">Rp. 1.500.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Packages End -->
+
+    <!-- Call Us Start -->
+    <section class="call-us" id="call-us">
+        <div class="call-us-container">
+            <h2>Yuk Liburan!</h2>
+            <p>Buruan daftar dan dapatkan harga yang ramah dikantong</p>
+            <button type="submit" onclick="joinAlert()">Kirim</button>
+        </div>
+    </section>
+    <!-- Call Us End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h3>Travel Agency</h3>
+            </div>
+            <div class="footer-item">
+                <p>Term of Service Privacy Policy</p>
+            </div>
+            <div class="footer-item">
+                <p>&copy; 2024 Travel Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
     <script src="js/script.js"></script>
 </body>
 </html>
